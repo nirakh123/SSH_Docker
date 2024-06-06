@@ -1,0 +1,14 @@
+Step 1: Create a directory.
+	> mkdir netmiko-docker
+Step 2: Access the created directory.
+	> cd netmiko-docker
+Step 3: Create a Docker file in the directory.
+	> touch dockerfile 
+	The created dockerfile is in the main branch of the repo.
+Step 4: Create a python script using Netmiko library to establish the SSH connection to the CISCO switch.
+	> touch get_cisco_config.py
+	The created python script (get_cisco_config.py) is in the main branch of the repo.
+Step 5: Build the Docker Image.
+	> docker build -t netmiko-cisco .
+Step 6: Run the docker container.
+	> docker run --rm -it netmiko-cisco
